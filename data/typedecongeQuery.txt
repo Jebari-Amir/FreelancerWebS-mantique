@@ -1,0 +1,10 @@
+PREFIX ns: <http://www.owl-ontologies.com/freelancer.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+
+SELECT ?name ?description
+WHERE {
+  ?resource ns:name_type_conge ?name .
+  ?resource ns:description_type_conge ?description
+ }

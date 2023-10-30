@@ -1,0 +1,13 @@
+PREFIX ns: <http://www.owl-ontologies.com/freelancer.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+
+SELECT ?sujet ?message ?offreemploi ?contact
+WHERE {
+  ?resource ns:sujet_reclamation ?sujet .
+  ?resource ns:message_reclamation ?message .
+    ?resource ns:aboutReclamation ?offreemploi .
+  ?resource ns:relatedToReclamation ?contact
+
+ }

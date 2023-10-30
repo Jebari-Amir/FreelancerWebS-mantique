@@ -1,0 +1,14 @@
+PREFIX ns: <http://www.owl-ontologies.com/freelancer.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+
+SELECT ?dateconge ?nombre ?motif ?report ?typedeconge
+WHERE {
+  ?resource ns:date_conge ?dateconge .
+  ?resource ns:nombre_conge ?nombre .
+  ?resource ns:motif_conge ?motif .
+  ?resource ns:report_conge ?report .
+  ?resource ns:hasType ?typedeconge
+
+ }
